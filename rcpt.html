@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Request Form</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/eeb6f18506.js" crossorigin="anonymous"></script>
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+
+
+  <section id="title" style="height:200px">
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <i class="fas fa-hands-helping features-icon logo" style="color: pink; margin-right: 20px"></i>
+        <a class="navbar-brand" href="index.html" style="color:black">RAKT</a>
+        <a class="navbar-toggler" type="a" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" style="color:black">
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" target="_blank" href="http://nbtc.naco.gov.in/">NBTC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" target="_blank" href="https://www.eraktkosh.in/BLDAHIMS/bloodbank/stockAvailability.cnt">e-RAKTKOSH(Availability)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  </section>
+
+
+
+<div class="rcptdiv">
+  <h2>Reciept</h2>
+  <p>Kindly print this receipt for verification and reference at the blood bank</p>
+  <br>
+  <i class="fas fa-hands-helping features-icon logo" style="color: pink"></i>
+<br><br>
+<button class="btn btn-dark btn-lg" onclick="window.print()">Print Reciept</button>
+<br><br>
+
+  <table class="table table-info table-striped table-hover">
+<thead>
+  <th>Request for Blood</th>
+  <th>Approved</th>
+</thead>
+  <tbody>
+    <tr>
+
+      <td>Receipt ID</td>
+      <td>A3696417ND</td>
+
+    </tr>
+    <tr>
+
+      <td>Blood Bank Name</td>
+      <td>Shree Aggarsain International Hospital Blood Bank</td>
+
+    </tr>
+    <tr>
+
+      <td>Blood Bank ID</td>
+      <td>AHDG1457</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Blood Group</td>
+      <td>A+</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Units Requested</td>
+      <td>2</td>
+
+    </tr>
+
+    <tr>
+      <td> <br><br><br>Authorised Official Signature</td>
+      <td><i class="fas fa-hands-helping features-icon" style="color: pink"></i> <br>&copy RAKT 2021</td>
+
+    </tr>
+  </tbody>
+
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+  <footer style="background-color:#ff4c68" id="footer">
+    <i class="soc-icon fab fa-facebook-f"></i>
+    <i class="soc-icon fab fa-twitter"></i>
+    <i class="soc-icon fab fa-instagram"></i>
+    <i class="soc-icon fas fa-envelope"></i>
+    <p style="color:black">© Copyright 2021 RAKT</p>
+
+  </footer>
+
+</body>
+  <script src="index.js" charset="utf-8"></script>
+
+  </html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Request Form</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/eeb6f18506.js" crossorigin="anonymous"></script>
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+
+  <section id="title" style="height:200px">
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <i class="fas fa-hands-helping features-icon logo" style="color: pink; margin-right: 20px"></i>
+        <a class="navbar-brand" href="index.html" style="color:black">RAKT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" style="color:black">
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" target="_blank" href="http://nbtc.naco.gov.in/">NBTC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" target="_blank" href="https://www.eraktkosh.in/BLDAHIMS/bloodbank/stockAvailability.cnt">e-RAKTKOSH(Availability)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  </section>
+
+
+  <div class="reqform">
+
+
+    <h2>Request Form</h2>
+    <br>
+
+    <i class="fas fa-hands-helping features-icon logo" style="color: pink"></i>
+
+    <br><br><br>
+
+    <h4 class="logo"><strong>Blood Bank Infomation</strong></h4>
+
+    <br>
+    <label>Blood Bank Name</label>
+    <input type="text" class="form-control top" placeholder="Blood Bank Name" required value="Blood Bank AIIMS">
+
+    <label>Blood Bank ID</label>
+    <input type="text" class="form-control top" placeholder="Blood Bank ID" required value="dvjs4824">
+
+    <label>CMO Name</label>
+    <input type="text" class="form-control middle" placeholder="CMO Name" required value="Dr. Mahesh Tripathi">
+
+    <label>CMO Mobile Number</label>
+    <input type="text" class="form-control bottom" placeholder="CMO Mobile Number" required value="8375093650">
+
+    <label>Blood Bank Address</label>
+    <input type="text" class="form-control top" placeholder="Blood Bank Address" required value="Blood Bank AIIMS, AIIMS, New Delhi">
+
+
+    <br><br>
+    <h4 class="logo"><strong>Receiver Information</strong></h4>
+    <br>
+    <input type="text" id="fn" class="form-control top" placeholder="First Name" required>
+
+    <input type="text" id="ln" class="form-control top" placeholder="Last Name" required>
+
+    <input type="text" class="form-control top" placeholder="Aadhar Number" required>
+
+    <input type="tel" id="mn" class="form-control top" placeholder="Mobile Number" required>
+
+
+    <select class="form-select form-control" aria-label=".form-select-lg example">
+      <option selected>Blood Group Required
+      <option >A+</option>
+      <option >A-</option>
+      <option >B+</option>
+      <option >B-</option>
+      <option >O+</option>
+      <option >O-</option>
+      <option >AB+</option>
+      <option >AB-</option>
+    </select>
+
+    <select class="form-select form-control" aria-label=".form-select-lg example">
+      <option selected>Number of Units Required
+      <option >1</option>
+      <option >2</option>
+      <option >3</option>
+      <option >4</option>
+      <option >5</option>
+      <option >6</option>
+      <option >7</option>
+      <option >8</option>
+      <option >9</option>
+      <option >10</option>
+    </select>
+
+
+<input type="text" class="form-control top" placeholder="Relation to Patient" required>
+
+    <br>
+
+
+
+    <a class="btn btn-lg btn-primary btn-block" href="prlist.html" role="button">Continue</a>
+
+    <br>
+    <br>
+    <p style="color: black">&copy; RAKT 2021</p>
+
+
+  </div>
+
+
+
+  <!-- Footer -->
+
+  <footer style="background-color:#ff4c68" id="footer">
+    <i class="soc-icon fab fa-facebook-f"></i>
+    <i class="soc-icon fab fa-twitter"></i>
+    <i class="soc-icon fab fa-instagram"></i>
+    <i class="soc-icon fas fa-envelope"></i>
+    <p style="color:black">© Copyright 2021 RAKT</p>
+
+  </footer>
+
+
+
+
+
+</body>
+
+<script src="index.js" charset="utf-8"></script>
+
+</html>

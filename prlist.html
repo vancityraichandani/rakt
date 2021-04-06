@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Request Form</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/eeb6f18506.js" crossorigin="anonymous"></script>
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+
+  <section id="title" style="height:200px">
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <i class="fas fa-hands-helping features-icon logo" style="color: pink; margin-right: 20px"></i>
+        <a class="navbar-brand" href="index.html" style="color:black">RAKT</a>
+        <a class="navbar-toggler" type="a" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" style="color:black">
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" target="_blank" href="http://nbtc.naco.gov.in/">NBTC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" target="_blank" href="https://www.eraktkosh.in/BLDAHIMS/bloodbank/stockAvailability.cnt">e-RAKTKOSH(Availability)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black" href="rform.html">Back</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  </section>
+
+  <div class="prtable">
+
+    <h2>Available Blood Banks</h2>
+
+    <br>
+    <i class="fas fa-hands-helping features-icon logo" style="color: pink"></i>
+
+    <select style="margin-right:100px; width:12%" class="form-select form-control" aria-label=".form-select-lg example">
+      <option selected>Sort by
+      <option >Units</option>
+      <option >Date of Expiry</option>
+      <option >Distance</option>
+    </select>
+
+
+
+    <table class="table table-dark table-hover table-striped">
+
+      <thead>
+        <tr>
+
+          <th scope="col">S.No.</th>
+          <th scope="col">Blood Bank Name</th>
+          <th scope="col">Unique ID</th>
+          <th scope="col">Blood Group</th>
+          <th scope="col">Units Available</th>
+          <th scope="col">Expires in (Days)</th>
+          <th scope="col">Distance (km)</th>
+          <th scope="col">Request</th>
+
+        </tr>
+      </thead>
+      <tbody style="margin: auto">
+        <tr>
+          <th scope="row">1</th>
+          <td class="bbn">Shree Aggarsain International Hospital Blood Bank</td>
+          <td>AHDG1457</td>
+          <td>A+</td>
+          <td>6</td>
+          <td>3</td>
+          <td>2</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="bbn">Human care medical charitable trust</td>
+          <td>FHDS4578</td>
+          <td>A+</td>
+          <td>6</td>
+          <td>3</td>
+          <td>3</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="bbn">Blood Bank Aakash Healthcare Pvt Ltd</td>
+          <td>CNMS4621</td>
+          <td>A+</td>
+          <td>5</td>
+          <td>3</td>
+          <td>5</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td class="bbn">Blood Bank, Safdarjung Hospital</td>
+          <td>DJRH0123</td>
+          <td>A+</td>
+          <td>4</td>
+          <td>2</td>
+          <td>8</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td class="bbn">Blood Bank, Bhagat Chandra Hospital</td>
+          <td>DHSY7816</td>
+          <td>A+</td>
+          <td>3</td>
+          <td>2</td>
+          <td>11</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td class="bbn">Blood Bank, Fortis Flt.Lt. Rajan Dhall Hospital </td>
+          <td>XSFT4872</td>
+          <td>A+</td>
+          <td>2</td>
+          <td>2</td>
+          <td>15</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td class="bbn">Blood Bank, Institute of Liver and Biliary Sciences</td>
+          <td>NHJB4201</td>
+          <td>A+</td>
+          <td>2</td>
+          <td>2</td>
+          <td>16</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td class="bbn">Blood Bank, Indian Spinal Injuries Centre</td>
+          <td>CBSM0217</td>
+          <td>A+</td>
+          <td>2</td>
+          <td>2</td>
+          <td>17</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td class="bbn">Blood Bank, Pitampura Blood Bank</td>
+          <td>DIFX3650 </td>
+          <td>A+</td>
+          <td>2</td>
+          <td>2</td>
+          <td>19</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td class="bbn">ABVIMS, Dr Ram Manohar Lohia Hospital</td>
+          <td>CVHS2052</td>
+          <td>A+</td>
+          <td>2</td>
+          <td>2</td>
+          <td>23</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td class="bbn">Blood Bank, Sir Ganga Ram Hospital</td>
+          <td>FQEW6512</td>
+          <td>A+</td>
+          <td>2</td>
+          <td>2</td>
+          <td>24</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td class="bbn">Blood Bank, Govind Ballabh Pant Institute of Postgraduate Medical Education and Research</td>
+          <td>LJDM5122</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>2</td>
+          <td>24</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td class="bbn">Blood Bank Organization</td>
+          <td>JFME6135</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>2</td>
+          <td>25</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td class="bbn">Blood Bank, Kasturba Gandhi Hospital</td>
+          <td>FGVN7893</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>2</td>
+          <td>28</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">15</th>
+          <td class="bbn">M/S Venkateshwar Hospital New Delhi, Dwarka Sector-18 A</td>
+          <td>JFME6135</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>2</td>
+          <td>32</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">16</th>
+          <td class="bbn">Blood Bank, Northern Railway Central Hospital</td>
+          <td>UYBM7823</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>1</td>
+          <td>31</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">17</th>
+          <td class="bbn">Blood Bank Sucheta Kriplani Hospital</td>
+          <td>YTDC3351</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>1</td>
+          <td>36</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">18</th>
+          <td class="bbn">Dr Ram Manohar Lohia Hospital Blood Bank</td>
+          <td>RJHF5525</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>1</td>
+          <td>35</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td class="bbn">Blood Bank Sant Parmanad Hospital</td>
+          <td>SRRT8598</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>1</td>
+          <td>37</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+        <tr>
+          <th scope="row">20</th>
+          <td class="bbn">Blood Bank, Hindu Rao Hospital</td>
+          <td>WEOP9862</td>
+          <td>A+</td>
+          <td>1</td>
+          <td>1</td>
+          <td>38</td>
+          <td><a type="submit" class="btn btn-success animate__flash" href="rcpt.html" name="a">Request</a></td>
+        </tr>
+      </tbody>
+
+
+    </table>
+  </div>
+
+
+
+  <!-- Footer -->
+
+  <footer style="background-color:#ff4c68" id="footer">
+    <i class="soc-icon fab fa-facebook-f"></i>
+    <i class="soc-icon fab fa-twitter"></i>
+    <i class="soc-icon fab fa-instagram"></i>
+    <i class="soc-icon fas fa-envelope"></i>
+    <p style="color:black">© Copyright 2021 RAKT</p>
+
+  </footer>
+
+
+
+
+
+</body>
+
+<script src="index.js" charset="utf-8"></script>
+
+</html>
